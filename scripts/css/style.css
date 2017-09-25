@@ -1,0 +1,144 @@
+html,
+body {
+    width: 80%;
+    margin: auto;
+}
+
+
+/*-----Désactivation de la sélection du texte-----*/
+
+.noselect {
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+    -khtml-user-select: none; /* Konqueror HTML */
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* Internet Explorer/Edge */
+    user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
+}
+
+/*-----Désactivation de la sélection du texte-----*/
+
+
+/*-----Home page-----*/
+
+select {
+    display: block;
+    width: 50%;
+    margin: auto;
+}
+
+select:focus {
+    outline: 1px solid #ff8711;
+}
+
+legend {
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-color: #ff8711;
+}
+
+.logo-ifa-home {
+    width: 15%;
+    display: block;
+    margin: auto;
+    margin-top: 7%;
+}
+
+.logo-ifa {
+    width: 15%;
+    display: block;
+    margin: 5% auto 5% auto;
+}
+
+.coordonnees {
+    width: 60%;
+    margin: auto;
+}
+
+.prefix {
+    color: #ff8711;
+}
+
+.input-field .prefix.active {
+    color: #ff8711;
+}
+
+.homepage {
+    margin: auto;
+}
+
+.home-form {
+    margin-top: 4%;
+}
+
+.home-quiz {
+    text-align: center;
+    margin: 4% 0 0.3% 0;
+    line-height: 2em;
+}
+
+.input-field {
+    width: 50%;
+    margin: auto;
+}
+
+.formation {
+    margin-left: 25%;
+}
+
+.waves-effect,
+.waves-light {
+    margin-left: 45%;
+}
+
+
+/*-----Home page-----*/
+
+
+/*-----Page quiz-----*/
+
+input[type=text]:not(.browser-default):focus:not([readonly]),
+input[type=email]:not(.browser-default):focus:not([readonly]) {
+    border-bottom: 1px #ff8711;
+    box-shadow: 0 1px 0 0 #ff8711;
+}
+
+[type="radio"]:not(:checked)+label:before,
+[type="radio"]:not(:checked)+label:after {
+    border: 2px solid #ff8711;
+}
+
+input[type="radio"]:checked+label:after,
+[type="radio"].with-gap:checked+label:after {
+    background-color: #ff8711;
+    border: 2px solid #ff8711;
+}
+
+[type="radio"]:not(:checked)+label,
+[type="radio"]:checked+label {
+    padding-left: 25px;
+}
+
+[type="checkbox"]+label {
+    padding-left: 23px;
+    padding-right: 6px;
+}
+
+[type="checkbox"]:checked+label:before {
+    border-right: 2px solid #ff8711;
+    border-bottom: 2px solid #ff8711;
+}
+
+[type="checkbox"]+label:before,
+[type="checkbox"]:not(.filled-in)+label:after {
+    border: 2px solid #ff8711;
+}
+
+.btn,
+.btn-large,
+.btn:hover,
+.btn-large:hover {
+    background: #ff8711;
+}
+
+/*-----Page quiz-----*/

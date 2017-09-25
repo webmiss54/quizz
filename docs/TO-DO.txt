@@ -1,0 +1,13 @@
+Refaire affichage liste formations sur le modèle de quiz avec PDO
+Trouver les correspondances des quiz par rapport aux formations (voir Mr. Padilla ?)
+Rentrer questions et réponses dans BDD QUIZ PAR QUIZ pour les afficher dans le HTML/PHP
+Vérifier bonnes réponses avec le secrétariat
+Faire une page à part pour les coordonnées + appel aux différents quiz
+Faire un modèle de quiz
+Responsive
+Afficher la liste des quiz directement après choix de la formation
+Changer texte d'intro en fonction du quiz (certains avec "calculatrice autorisée")
+Angular pour transitions entre questions ?
+Select ne fonctionnent pas sur FF
+Mettre scripts php et js dans fichiers à part
+"is deleted" pour supprimer de l'affichage de la BDD ==> if "is deleted"=false...
