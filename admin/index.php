@@ -12,8 +12,8 @@ if (!isset($_SESSION['id'])) {
     $user = $stmt->fetch();
 }
 
-?>
 
+?>
 
 
 <!DOCTYPE html>
@@ -28,16 +28,57 @@ if (!isset($_SESSION['id'])) {
     <link rel="stylesheet" href="../scripts/css/style.css">
     <title>IFA - Accueil Quiz</title>
  
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="../scripts/materialize/js/materialize.min.js"></script>
+    
 </head>
 <body>
-
+  <!-- container -->
+    <div class="container">
 	<p><?php echo 'Bienvenue ', htmlspecialchars($user['login'], ENT_NOQUOTES); ?>
 
-	<form action="deconnexion.php" method="post">
-    	<input type="submit" value="Déconnexion" />
+	<form action="deconnexion.php" method="post"><input type="submit" value="Déconnexion" />
     </form>
 
+    </div>
+
+<div class="table-responsive">
+
+<br />
+<table class="table table-hover table-bordered">
+
+<br />
+<thead>
+        <thead>
+          <tr><? while($row = $req->fetch()) { ?>
+              <th>Nom Eleve</th> 
+              <th>Prenom Eleve</th>
+              <th>MAIL</th>
+              <th>Formation</th>
+              <th>Résultat Quiz</th>
+              <th>Résultat Quiz 2</th>
+              <th>Résultat Total</th>
+              <th>Admis</th>
+
+
+          </tr>
+        </thead>
+
+       <tbody>
+  
+          <tr>
+            <td><? echo $row['nom']; ?></td>
+            <td><? echo $row['prenom']; ?></td>
+            <td><? echo $row['mail']; ?></td>
+            <td><? echo $row['nom_formation']; ?></td>
+            <td><? echo $row['resultat']; ?></td>
+            <td><? echo $row['prenom']; ?></td>
+            <td><? echo $row['prenom']; ?></td>
+            <td><? echo $row['prenom']; ?></td>
+          </tr>
+        
+        </tbody> 
+      </table>
+
+  <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/materialize/js/materialize.min.js"></script>   
 </body>
 </html>

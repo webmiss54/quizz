@@ -46,7 +46,8 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12"> 
+    <img src="../images/logo-ifa.png" alt="Logo IFA" class="logo-ifa-home">
 <?php
 if ($fail) {
     echo '<p class="alert alert-info">Aucun utilisateur ne correspond à ce couple login/mot de passe.</p>';

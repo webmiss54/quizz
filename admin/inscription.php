@@ -67,21 +67,29 @@ if ('POST' == $_SERVER['REQUEST_METHOD']) {
 <!DOCTYPE html>
 <html>
     <head>
-        <meta charset="utf-8" />
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+             <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="../scripts/materialize/css/materialize.min.css">
+    <script type="text/javascript" src="../scripts/js/script.js"></script>
+    <link rel="stylesheet" href="../scripts/css/style.css">
+    <title>IFA - Inscription</title>
+ 
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="../scripts/materialize/js/materialize.min.js"></script>
     </head>
     <body>
         <div class="container-fluid">
             <div class="row">
-                <div class="col-xs-12">
+                <div class="col-xs-12"> <img src="../images/logo-ifa.png" alt="Logo IFA" class="logo-ifa-home">
 <?php
 if ($errors) {
     echo '<div class="alert alert-warning"><p>Veuillez corriger les erreurs ci-dessous afin de réaliser votre inscription :</p><ul><li>', implode('</li><li>', $errors), '</li></ul></div>';
 }
-?>
+?> 
                     <form class="form-horizontal" method="post" action="">
                         <fieldset>
-                            <legend>Inscription :</legend>
+                            <legend >Inscription :</legend>
                             <div class="form-group <?php if (array_key_exists('login', $errors)) echo 'has-error'; ?>">
                                 <label for="login">Login :</label>
                                 <input type="text" id="login" name="login" class="form-control" value="<?php if (array_key_exists('login', $_POST)) echo htmlspecialchars($_POST['login']); ?>" />
